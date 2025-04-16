@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Future of Technology in France</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>France & Technology</h1>
+    <nav>
+      <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="history.html">History</a></li>
+        <li><a href="innovation.html">Innovation</a></li>
+        <li><a href="startup.html">Startups</a></li>
+        <li><a href="future.html">Future</a></li>
+        <li><a href="#references">References</a></li>
+        <li><a href="#contributions">Contributions</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="future">
+    <h2>Future of Technology in France</h2>
+    <p>
+      France is preparing for an exciting technological future. Building on its strong heritage of innovation, the country is placing itself at the heart of global tech revolutions. Through strategic investments, collaboration with the private sector, and world-class educational infrastructure, France is nurturing a new generation of startups and research initiatives that aim to tackle some of the world’s most pressing challenges.
+    </p>
+
+    <h3>Artificial Intelligence</h3>
+    <img src="ai.webp"
+         alt="Artificial Intelligence in France" style="width:100%; border-radius:10px; margin:20px 0;">
+    <p>
+      Artificial Intelligence (AI) is at the core of France's technological future. The French government has allocated billions of euros to support AI research and the development of ethical, secure, and socially beneficial AI systems. These advancements are expected to revolutionize sectors like healthcare — improving diagnostics and treatments, optimizing smart transportation systems for cities, and strengthening public service delivery with automation and predictive tools. France’s AI vision also emphasizes transparency, aiming to create trustworthy systems that respect human values and privacy.
+    </p>
+
+    <h3>Green Energy Innovation</h3>
+    <img src="https://images.unsplash.com/photo-1509395176047-4a66953fd231?ixlib=rb-4.0.3&auto=format&fit=crop&w=1950&q=80"
+         alt="Green Energy Innovation France" style="width:100%; border-radius:10px; margin:20px 0;">
+    <p>
+      Facing the global climate emergency, France has committed to reshaping its energy landscape. The future lies in scaling up renewable energy sources such as wind, solar, and next-generation nuclear power. French researchers and startups are actively developing eco-friendly solutions including smart grids, energy storage, and low-carbon transport systems. Government policies encourage energy efficiency and sustainability, aiming to make France one of the leading nations in green technology innovation, aligned with the European Union’s long-term climate goals.
+    </p>
+
+    <h3>Quantum Computing</h3>
+    <img src="quantum.png"
+         alt="Quantum Computing France" style="width:100%; border-radius:10px; margin:20px 0;">
+    <p>
+      Quantum computing is a high-potential field where France is making significant strides. Backed by public research organizations like CNRS, INRIA, and CEA, French scientists are exploring ways to unlock the power of quantum mechanics for real-world applications. These next-generation systems promise to perform calculations far beyond the reach of today’s computers — from simulating complex molecules in pharmaceuticals to optimizing logistics and even advancing AI. France’s goal is to build an ecosystem where researchers and industries can collaborate to develop cutting-edge quantum algorithms and hardware.
+    </p>
+
+    <p>
+      With forward-thinking policies, a growing startup ecosystem, and top-tier research institutions, France is determined to balance technological progress with social responsibility and environmental sustainability. The future is not just about innovation but about creating solutions that ensure a better quality of life for both people and the planet.
+    </p>
+  </section>
+
+  <script>
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+        });
+      });
+    });
+  </script>
+</body>
+</html>
