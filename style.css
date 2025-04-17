@@ -163,3 +163,10 @@ html {
     padding: 30px 15px;
   }
 }
+.team-member {
+  border: 1px solid #ccc;
+  padding: 1rem;
+  margin: 1rem 0;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+}
