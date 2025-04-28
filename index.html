@@ -4,123 +4,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>France & Technology</title>
-    <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+
 </head>
 <body>
-    <nav class="navbar">
-        <div class="nav-container">
-            <div class="logo">
-                <img src="./images/franceflag.png" alt="French Flag" class="flag-icon">
-                <span>France Tech Hub</span>
-            </div>
-            <ul class="nav-links">
-                <li><a href="index.html" class="active">Home</a></li>
-                <li><a href="history.html">History</a></li>
+    <header>
+        <h1>France & Technology</h1>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="history.html">History of Games</a></li>
                 <li><a href="innovation.html">Innovation</a></li>
                 <li><a href="startup.html">Startups</a></li>
                 <li><a href="future.html">Future</a></li>
                 <li><a href="funfacts.html">Fun Facts</a></li>
                 <li><a href="contributions.html">Contributions</a></li>
-            </ul>
-        </div>
-    </nav>
-
-    <main>
-        <section class="hero">
-            <div class="hero-content">
-                <h1>Discover France's Tech Excellence</h1>
-                <p>Where Innovation Meets Tradition</p>
-                <a href="#explore" class="cta-button">Explore Now</a>
-            </div>
-        </section>
-
-        <section id="explore" class="features">
-            <h2>Explore Our Tech Ecosystem</h2>
-            <div class="cards-grid">
-                <div class="feature-card">
-                    <div class="card-icon">
-                        <i class="fas fa-gamepad"></i>
-                    </div>
-                    <h3>Gaming History</h3>
-                    <p>Discover France's revolutionary contributions to the gaming industry</p>
-                    <a href="history.html" class="card-link">Learn More →</a>
-                </div>
-
-                <div class="feature-card">
-                    <div class="card-icon">
-                        <i class="fas fa-lightbulb"></i>
-                    </div>
-                    <h3>Innovation Hub</h3>
-                    <p>Explore groundbreaking French technological innovations</p>
-                    <a href="innovation.html" class="card-link">Learn More →</a>
-                </div>
-
-                <div class="feature-card">
-                    <div class="card-icon">
-                        <i class="fas fa-rocket"></i>
-                    </div>
-                    <h3>Startup Scene</h3>
-                    <p>Meet France's most promising tech startups</p>
-                    <a href="startup.html" class="card-link">Learn More →</a>
-                </div>
-
-                <div class="feature-card">
-                    <div class="card-icon">
-                        <i class="fas fa-chart-line"></i>
-                    </div>
-                    <h3>Future Tech</h3>
-                    <p>Preview the future of French technology</p>
-                    <a href="future.html" class="card-link">Learn More →</a>
-                </div>
-            </div>
-        </section>
-
-        <section class="stats">
-            <div class="stats-container">
-                <div class="stat-item">
-                    <span class="stat-number">4th</span>
-                    <span class="stat-label">Largest Tech Hub in Europe</span>
-                </div>
-                <div class="stat-item">
-                    <span class="stat-number">€11.6B</span>
-                    <span class="stat-label">Startup Funding 2023</span>
-                </div>
-                <div class="stat-item">
-                    <span class="stat-number">10,000+</span>
-                    <span class="stat-label">Active Startups</span>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <footer>
-        <div class="footer-content">
-            <div class="footer-section">
-                <h4>France Tech Hub</h4>
-                <p>Exploring France's technological landscape and innovation ecosystem.</p>
-            </div>
-            <div class="footer-section">
-                <h4>Quick Links</h4>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="innovation.html">Innovation</a></li>
-                    <li><a href="startup.html">Startups</a></li>
-                    <li><a href="future.html">Future</a></li>
-                </ul>
-            </div>
-            <div class="footer-section">
-                <h4>Connect</h4>
-                <div class="social-links">
-                    <a href="#"><i class="fab fa-twitter"></i></a>
-                    <a href="#"><i class="fab fa-github"></i></a>
-                </div>
-            </div>
-        </div>
-        <div class="footer-bottom">
-            <p>&copy; 2024 France Tech Hub. All rights reserved.</p>
-        </div>
-    </footer>
+              </ul>
+        </nav>
+    </header>
+    <section id="home">
+        <h2>Introduction</h2>
+        <p>Welcome to our website, exploring France’s contributions to technology, gaming, and innovation.</p>
+    </section>
+    <script>
+        // Smooth scrolling for navigation
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
 </body>
 </html>
