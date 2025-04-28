@@ -1,0 +1,236 @@
+/* History Page Specific Styles */
+.history-hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+                url('https://images.unsplash.com/photo-1511512578047-dfb367046420?q=80&w=2071&auto=format&fit=crop');
+    background-position: center;
+    height: 60vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    margin-top: 4rem;
+}
+
+.history-hero h1 {
+    font-size: 4rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.history-hero p {
+    font-size: 1.5rem;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.history-content {
+    max-width: 1200px;
+    margin: 4rem auto;
+    padding: 0 2rem;
+    position: relative;
+}
+
+/* Timeline and Cards */
+.timeline-card {
+    margin: 6rem 0;
+    width: 100%;
+    position: relative;
+}
+
+.timeline-card::before {
+    content: '';
+    position: absolute;
+    width: 3px;
+    height: 120%;
+    background: linear-gradient(to bottom, transparent, #2563eb, transparent);
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: -1;
+    top: -10%;
+}
+
+.card-content {
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 45%;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.timeline-card.left .card-content {
+    margin-right: auto;
+}
+
+.timeline-card.right .card-content {
+    margin-left: auto;
+}
+
+/* Timeline Dots */
+.timeline-card::after {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background: #2563eb;
+    border-radius: 50%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 0 0 4px rgba(37, 99, 235, 0.3);
+}
+
+/* Card Hover Effects */
+.card-content:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+}
+
+/* Image Styles */
+.card-image {
+    position: relative;
+    overflow: hidden;
+    height: 300px;
+}
+
+.card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.card-image:hover img {
+    transform: scale(1.1);
+}
+
+/* Card Content Styles */
+.card-text {
+    padding: 2.5rem;
+}
+
+.card-text h3 {
+    color: #1e293b;
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    position: relative;
+    padding-bottom: 0.5rem;
+}
+
+.card-text h3::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 50px;
+    height: 3px;
+    background: #2563eb;
+    border-radius: 2px;
+}
+
+.card-text p {
+    color: #64748b;
+    margin-bottom: 1.5rem;
+    line-height: 1.8;
+    font-size: 1.1rem;
+}
+
+/* Achievement List Styles */
+.achievement-list {
+    list-style: none;
+    padding: 0;
+    margin-top: 2rem;
+}
+
+.achievement-list li {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    color: #4b5563;
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+    padding: 0.5rem 0;
+    transition: transform 0.3s ease;
+}
+
+.achievement-list li:hover {
+    transform: translateX(10px);
+    color: #2563eb;
+}
+
+.achievement-list i {
+    color: #2563eb;
+    font-size: 1.2rem;
+}
+
+/* Year Badge */
+.year-badge {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: rgba(37, 99, 235, 0.9);
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-weight: 600;
+    backdrop-filter: blur(4px);
+    z-index: 1;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .history-hero h1 {
+        font-size: 3rem;
+    }
+    
+    .card-content {
+        width: 48%;
+    }
+}
+
+@media (max-width: 768px) {
+    .timeline-card::before {
+        left: 0;
+    }
+    
+    .timeline-card::after {
+        left: 0;
+    }
+    
+    .card-content {
+        width: 90%;
+        margin: 0 auto !important;
+    }
+    
+    .timeline-card {
+        margin: 3rem 0;
+    }
+    
+    .history-hero h1 {
+        font-size: 2.5rem;
+    }
+    
+    .history-hero p {
+        font-size: 1.2rem;
+    }
+}
+
+/* Animation Classes */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.animate-fadeInUp {
+    animation: fadeInUp 0.6s ease forwards;
+} 
